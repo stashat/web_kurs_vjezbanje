@@ -4,54 +4,49 @@
         <title>Form1</title>
     </head>
     <body>
+        <form id="form">
         <table border="1" cellpadding='10'>
         <tr>
             <th colspan="2">Pizza Shop 2.0</th>
         </tr>
         <tr>
             <td>Name</td>
-            <td><form id="form1"><input type="text" name="name" maxlength="20" required></form></td>
+            <td><input type="text" name="name" maxlength="20" required></td>
         </tr>
         <tr>
             <td>Pizza Topping</td>
             <td>
-                <form id="form1">
-                    <input type="radio" > Supreme<br>
-                    <input type="radio" > Vegeterian<br>
-                    <input type="radio" > Hawaiian  
-                  </form> 
+                <input type="radio" value='supreme' name='pizza topping'> Supreme<br>
+                <input type="radio" value='vegeterian' name='pizza topping'> Vegeterian<br>
+                <input type="radio" value='hawaiian' name='pizza topping'> Hawaiian  
             </td>
         </tr>
         <tr>
             <td>Pizza Sauce</td>
             <td>
-                <form id="form1">
-                    <select>
-                      <option >Tomato</option>
-                      <option >Garlic</option>
-                      <option >Hot Sauce</option>
-                      <option >Mayo</option>
-                    </select>
-                  </form>
+                <select name='pizza sauce'>
+                  <option value='tomato'>Tomato</option>
+                  <option value='garlic'>Garlic</option>
+                  <option value='hot sauce'>Hot Sauce</option>
+                  <option value='mayo'>Mayo</option>                    
+                </select>
             </td>
         </tr>
         <tr>
             <td>Optional Extras</td>
-            <td><form id="form1"> 
-                <input type="checkbox">Extra Cheese<br>
-                <input type="checkbox">Gluten Free Base<br>
-            </form></td>
+            <td>
+                <input type="checkbox" name='extra cheese'>Extra Cheese<br>
+                <input type="checkbox" name='gluten free base'>Gluten Free Base<br>
+            </td>
         </tr>
         <tr>
             <td colspan="2">Delivery Istructions:<br>
-            <textarea rows="4" cols="50" name="delivery Istructions" maxlength="100" id="form1"></textarea></td>
+            <textarea rows="4" cols="50" name="delivery Istructions" maxlength="100" id="form5" required></textarea></td>
         <tr>
-            <td colspan="2"><button type="submit" form="form" value="Submit">Send My Order</button></td>
+            <td colspan="2"><input type="submit" form="form" value="Send My Order"></td>
         </tr>
 
         </table>
+        </form>
     </body>
-
-
-
 </html>
