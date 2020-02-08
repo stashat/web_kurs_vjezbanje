@@ -5,28 +5,28 @@
         <h1>Software Order Form</h1>
         <form>
         <ul>License details
-            <li>Email address  <input type="text" name='email' placeholder='example@mail.com' required></li>
-            <li>Website  <input type="text" name='website' placeholder='http://www.example.com/' required></li>
-            <li>Number of licenses  <input type="text" name='num_of_licenses' placeholder='How many to buy (1-10)' required></li>
+            <li>Email address  <input type="email" name='email' placeholder='example@mail.com' required></li>
+            <li>Website  <input type="url" name='website' placeholder='http://www.example.com/' required></li>
+            <li>Number of licenses  <input type="number" max='10' name='num_of_licenses' placeholder='How many to buy (1-10)' required></li>
         </ul>
 
         <ul>Billing details
             <li>Name  <input type="text" name='name' placeholder='First Last' required></li>
             <li>Address  <input type="text" name='address' placeholder='House number, street, city, state' required></li>
-            <li>Postal code  <input type="text" name='postal_code' placeholder='Post code or zip code' required></li>
+            <li>Postal code  <input type="number" name='postal_code' placeholder='Post code or zip code' required></li>
             <li>Country  <select name="country">
                 <option value='Australia'>Australia</option>
                 <option value='Japan'>Japan</option>
                 <option value='USA'>USA</option>
                 <option value='UK'>UK</option>   
             </select></li>
-            <li>Phone (optional)  <input type="text" name='phone' placeholder="Include country prefix"></li>
+            <li>Phone (optional)  <input type="tel" name='phone' placeholder="Include country prefix"></li>
         </ul>
 
         <ul>Payment details
-            <li>Card number  <input type="text" name='card_num' placeholder='As shown on the front of you card' required></li>
-            <li>CVV code  <input type="text" name='CVV' placeholder='3-digit number on the back of your card' required></li>
-            <li>Expiry date  <input type="text" name='expiry_date' placeholder='YYYY-MM' required></li>
+            <li>Card number  <input type="number" name='card_num' placeholder='As shown on the front of you card' required></li>
+            <li>CVV code  <input type="number" name='CVV' placeholder='3-digit number on the back of your card' required></li>
+            <li>Expiry date  <input type="number" name='expiry_date' placeholder='YYYY-MM' required></li>
         </ul>
         <input type="submit" value="Place Your Order">
         </form>
