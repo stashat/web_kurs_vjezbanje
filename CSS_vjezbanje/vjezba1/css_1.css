@@ -47,3 +47,47 @@ h2{
     border: 3px solid rgb(221, 128, 14);
     opacity: 95%;
 }
+.bottomDiv{
+    position:relative;
+    bottom:80px;
+    left:380px;
+ }
+.round1{
+    border:4px dashed white; 
+    background-color: black;
+    box-shadow: 0 0 0 4px black;
+    opacity: 50%;   
+    height:30px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:30px;
+}
+.round2{
+    height:45px;
+    width:45px;
+}
+.round3{
+    height:50px;
+    width:100px;
+    border-radius: 35px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    text-size-adjust: 10px;
+}
+.align1{
+    position: relative;
+    left:50px;
+    bottom: 110px;
+}
+.align2{
+    position: relative;
+    left:50px;
+    bottom: 90px;
+}
+.align3{
+    position: relative;
+    left:100px;
+    bottom: 240px;
+}
